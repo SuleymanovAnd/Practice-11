@@ -24,18 +24,18 @@ std::string decrypt_caesar (std::string s, int n){
 
     return encrypt_caesar (s, (26 -n));
 }
-
+// функции для второго задания
 bool first_part_email_correct (std::string str){
     std::string dictionary = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'*+-/=?^_`{|}~0123456789.-";
     if (str.length()<1 || str.length() > 64){return false;} //проверяем длину первой части
-    return (correct_part(str,dictionary) ? true: false);
+    return correct_part(str,dictionary);
 
 }
 bool second_part_email_correct (std::string str){
     if (str.length()<1 || str.length() > 63){return false;} // проверяем длину второй части
     std::string dictionary = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-";
 
-return (correct_part(str,dictionary) ? true: false);
+return correct_part(str,dictionary);
 }
 
 bool correct_part (std::string str, std::string dictionary) {

@@ -2,6 +2,7 @@
 // Created by Андрей on 04.06.2022.
 //
 #include <iostream>
+#include "overflow.h"
 bool first_part_email_correct (std::string str);
 bool second_part_email_correct (std::string str);
 
@@ -9,6 +10,7 @@ void email_correct (){
     std::string email;
 std::cout << "Input email address: ";
 std::cin >> email;
+while (overflow ()){std::cin >> email;}
 
 std::string first_part;
 std::string second_part;
