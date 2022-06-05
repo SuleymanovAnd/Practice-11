@@ -1,6 +1,6 @@
 //
 // Created by Андрей on 04.06.2022.
-//
+// тут функции для первой и второй работ
 #include <iostream>
 bool correct_part (std::string str, std::string dictionary);
 

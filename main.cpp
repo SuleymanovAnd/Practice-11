@@ -5,7 +5,7 @@ std::string decrypt_caesar (std::string s, int n);
 void email_correct ();
 std::string  get_address_part (std::string str, int oct);
 bool ip_part_correct (std::string str);
-
+void tic_tac_toe ();
 
 int main() {
 std::cout << "Exercise 1\n\n";
@@ -41,4 +41,8 @@ std::string outStr = encrypt_caesar (str, number); // зашифрованная
        //* std::cout << Valid << " Valid" << std::endl; вывод проверки валидности по частям для наглядности
     }
    std::cout << (Valid ? "Valid": "Invalid");
+
+
+    std::cout << "\n\nExercise 4\n\n";
+    tic_tac_toe ();
 }
