@@ -42,7 +42,7 @@ Vanya_Won =(str_win(Up_str,Mid_str,Dwn_str,'O',0)
             ||diagonal_win (Up_str,Mid_str,Dwn_str,'O',0)
             ||diagonal_win (Up_str,Mid_str,Dwn_str,'O',1));
 
-std::cout << "Petya " << Petya_Won << "\tVania" <<Vanya_Won<<std::endl;
+//std::cout << "Petya " << Petya_Won << "\tVanya " <<Vanya_Won<<std::endl;
 int countX= smb_count(Up_str,Mid_str,Dwn_str,'X');
 int countO = smb_count(Up_str,Mid_str,Dwn_str,'O');
 
